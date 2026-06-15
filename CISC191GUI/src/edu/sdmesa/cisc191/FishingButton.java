@@ -28,7 +28,7 @@ import javax.swing.JButton;
  * 
  */
 
-public class FishingButton
+public class FishingButton 
 {
 	/**
 	 * Create a fishing button at a given location

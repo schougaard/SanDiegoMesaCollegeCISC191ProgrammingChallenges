@@ -23,7 +23,7 @@ import javax.swing.JOptionPane;
 /**
  * Purpose: The responsibility of GoneFishingGame is start the game running
  */
-public class GoneFishingGame
+public class GoneFishingGame 
 {
 	/**
 	 * Starts the game

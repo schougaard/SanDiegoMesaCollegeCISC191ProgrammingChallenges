@@ -23,7 +23,7 @@ package edu.sdmesa.cisc191;
  * 
  */
 
-public class GoneFishingController
+public class GoneFishingController 
 {
 	/**
 	 * TODO

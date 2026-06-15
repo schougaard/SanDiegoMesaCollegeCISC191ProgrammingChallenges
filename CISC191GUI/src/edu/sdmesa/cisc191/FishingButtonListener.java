@@ -27,7 +27,7 @@ package edu.sdmesa.cisc191;
  */
 
 // TODO: FishingButtonListener is-an ActionListener
-public class FishingButtonListener
+public class FishingButtonListener 
 {
 	public FishingButtonListener(GoneFishingController controller,
 			FishingButton button)

@@ -101,7 +101,7 @@ class TestGoneFishing
 		assertNotEquals(fishingButton.getText(), fishText);
 	}
 
-	@Test
+	@Test 
 	void testGoneFishingView()
 	{
 		GoneFishingView view = new GoneFishingView();

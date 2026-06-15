@@ -41,6 +41,7 @@ public class GoneFishingModel
 		for (int fishCounter = 0; fishCounter < fishRemaining; fishCounter++)
 		{
 			int row, column;
+			// TODO: what does this loop do?
 			do
 			{
 				row = randomNumberGenerator.nextInt(DIMENSION);
