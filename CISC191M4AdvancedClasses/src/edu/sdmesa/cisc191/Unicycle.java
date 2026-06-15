@@ -1,5 +1,7 @@
 package edu.sdmesa.cisc191;
 
+import java.awt.Color;
+
 /**
  * Lead Author(s):
  * @author 
@@ -33,9 +35,13 @@ public class Unicycle extends Cycle
 	 */
 	public Unicycle(String newMake)
 	{
-		// TODO Auto-generated constructor stub
 		super(newMake);
 		
 	}
-	
+
+	@Override
+	public int getNumberOfWheels()
+	{
+		return -1;
+	}	
 }
