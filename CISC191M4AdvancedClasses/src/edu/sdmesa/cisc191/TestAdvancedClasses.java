@@ -98,12 +98,12 @@ class TestAdvancedClasses
 //		Bicycle bicycle1 = new Bicycle("Tooney");
 //		assertEquals(2, bicycle1.getNumberOfWheels());
 //		assertEquals("Tooney", bicycle1.getMake());
-//		assertEquals("Tooney3", unicycle1.getFrameNumber());
+//		assertEquals("Tooney3", bicycle1.getFrameNumber());
 //
 //		Cycle bicycle2 = new Bicycle("Tooney");
-//		assertEquals(2, bicycle1.getNumberOfWheels());
-//		assertEquals("Tooney", bicycle1.getMake());
-//		assertEquals("Tooney4", unicycle1.getFrameNumber());
+//		assertEquals(2, bicycle2.getNumberOfWheels());
+//		assertEquals("Tooney", bicycle2.getMake());
+//		assertEquals("Tooney4", bicycle2.getFrameNumber());
 //	}
 //
 //	@Test
