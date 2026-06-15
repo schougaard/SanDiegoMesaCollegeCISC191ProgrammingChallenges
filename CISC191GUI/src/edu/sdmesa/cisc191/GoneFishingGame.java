@@ -32,14 +32,12 @@ public class GoneFishingGame
 	 */
 	public static void main(String[] args)
 	{
-		GoneFishingModel model = null;
-		GoneFishingView view = null;
 		try
 		{
-			model = new GoneFishingModel();
-			view = new GoneFishingView(model);
-			
-			// This will start the game by showing the window
+			GoneFishingModel model = new GoneFishingModel();
+			// Show the view
+			GoneFishingView view = new GoneFishingView();
+			// Start the game
 			new GoneFishingController(model, view);
 		}
 		catch (Exception exception)

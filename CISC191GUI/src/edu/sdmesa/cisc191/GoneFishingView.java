@@ -34,7 +34,7 @@ public class GoneFishingView extends JFrame
 	 * 
 	 * @param goneFishingModel used to update the GUI
 	 */
-	public GoneFishingView(GoneFishingModel goneFishingModel)
+	public GoneFishingView()
 	{
 		// TODO: create and layout all the needed widgets with their listeners
 
@@ -43,13 +43,31 @@ public class GoneFishingView extends JFrame
 		pack();
 		setVisible(true);
 	}
+	
+	/**
+	 * Update the GUI based on the location
+	 */
+	public void updateButtonAt(int row, int column, boolean isFish)
+	{
+		// TODO: reveal the button at the location
+	}
 
 	/**
-	 * Update the GUI based on the data in the model
+	 * Update the GUI based on the number of fish remaining
 	 */
-	public void updateGUI()
+	public void updateFishRemaining(int fishRemaining)
 	{
 		// TODO
 
 	}
+
+	/**
+	 * Update the GUI based on the the number of tries remaining
+	 */
+	public void updateTriesRemaining(int triesRemaining)
+	{
+		// TODO
+
+	}
+
 }
