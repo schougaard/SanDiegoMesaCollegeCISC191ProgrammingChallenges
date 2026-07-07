@@ -43,14 +43,6 @@ public class GoneFishingView extends JFrame
 		pack();
 		setVisible(true);
 	}
-	
-	/**
-	 * Update the GUI based on the location
-	 */
-	public void updateButtonAt(int row, int column, boolean isFish)
-	{
-		// TODO: reveal the button at the location
-	}
 
 	/**
 	 * Update the GUI based on the number of fish remaining
