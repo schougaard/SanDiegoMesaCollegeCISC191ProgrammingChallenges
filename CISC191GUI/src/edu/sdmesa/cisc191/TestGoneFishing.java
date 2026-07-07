@@ -109,7 +109,8 @@ class TestGoneFishing
 
 		// We cannot check what the GUI looks like,
 		// only that we can call the methods
-		view.updateButtonAt(0, 0, false);
+		view.setMaxFish(10);
+		view.setMaxTries(30);
 		view.updateFishRemaining(11);
 		view.updateTriesRemaining(10);
 	}
@@ -123,9 +124,10 @@ class TestGoneFishing
 				view);
 
 		FishingButton button = new FishingButton(1, 2);
-		controller.onFishingButtonClicked(button);
-		// Button should be revealed
 		String buttonTextBefore = button.getText();
+		
+		// Button should be revealed
+		controller.onFishingButtonClicked(button);
 		// When revealed the button should change
 		assertNotEquals(button.getText(), buttonTextBefore);
 		// There should be one less tries remaining
