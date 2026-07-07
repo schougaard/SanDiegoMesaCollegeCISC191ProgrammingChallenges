@@ -36,6 +36,9 @@ public class GoneFishingController
 	{
 		// TODO: Initialize instance variables/fields here
 
+		// TODO: After initializing the view, set maximum values
+		// for the sliders here
+		
 	}
 
 	/**
@@ -47,7 +50,7 @@ public class GoneFishingController
 	{
 		// TODO: What should happen when a fishing button is clicked?
 		// Hint: The controller first tells the model what happened 
-		// and then tells the view to update
+		// and then tells views to update
 
 	}
 
