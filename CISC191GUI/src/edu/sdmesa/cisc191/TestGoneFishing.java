@@ -109,8 +109,6 @@ class TestGoneFishing
 
 		// We cannot check what the GUI looks like,
 		// only that we can call the methods
-		view.setMaxFish(10);
-		view.setMaxTries(30);
 		view.updateFishRemaining(11);
 		view.updateTriesRemaining(10);
 	}

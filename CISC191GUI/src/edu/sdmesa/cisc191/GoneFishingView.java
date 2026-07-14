@@ -28,7 +28,7 @@ import javax.swing.JFrame;
  */
 
 public class GoneFishingView extends JFrame
-{
+{	
 	/**
 	 * Create GUI for game
 	 * 
@@ -46,20 +46,39 @@ public class GoneFishingView extends JFrame
 
 	/**
 	 * Update the GUI based on the number of fish remaining
+	 * @param fishRemaining
 	 */
 	public void updateFishRemaining(int fishRemaining)
 	{
 		// TODO
-
+		
 	}
 
 	/**
 	 * Update the GUI based on the the number of tries remaining
+	 * @param triesRemaining
 	 */
 	public void updateTriesRemaining(int triesRemaining)
 	{
 		// TODO
-
+		
 	}
-
+	
+	/**
+	 * Set the maximum number of fish for the slider
+	 * @param maxFish
+	 */
+	public void setMaxFish(int maxFish) {
+		// TODO
+		
+	}
+	
+	/**
+	 * Set the maximum number of tries for the slider
+	 * @param maxTries
+	 */
+	public void setMaxTries(int maxTries) {
+		// TODO
+		
+	}
 }
