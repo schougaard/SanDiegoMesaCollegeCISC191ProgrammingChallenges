@@ -45,20 +45,7 @@ public abstract class Cycle
 		// TODO
 	}
 
-	abstract int getNumberOfWheels();
-
-	/**
-	 * 
-	 * @return the color of the bike; can be null
-	 */
-	abstract Color getColor();
-
-	/**
-	 * Changes the color of the bike
-	 * 
-	 * @param newColor
-	 */
-	abstract void setColor(Color newColor);
+	public abstract int getNumberOfWheels();
 
 	/**
 	 * 
@@ -84,14 +71,14 @@ public abstract class Cycle
 	/**
 	 *  @return true if the frame "numbers" are the same
 	 */
-//	@Override
-//	public boolean equals(Object other)
-//	{
-//		// TODO: 
-//		// Hint: use instanceof
-//		// See: https://www.sitepoint.com/implement-javas-equals-method-correctly/
-//		return false;
-//	}
+	@Override
+	public boolean equals(Object other)
+	{
+		// TODO: 
+		// Hint: use instanceof
+		// See: https://www.sitepoint.com/implement-javas-equals-method-correctly/
+		return false;
+	}
 	
 	/**
 	 * @return String describing the object, including frame number and color
