@@ -4,38 +4,42 @@ package edu.sdmesa.cisc191;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
  * 
- * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
+ * @author
+ * @author
+ *         <<add additional lead authors here, with a full first and last name>>
  * 
- * References:
- * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
- * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
+ *         Other contributors:
+ *         Alex Chow, Allan Schougaard
+ *         <<add additional contributors (mentors, tutors, friends) here, with
+ *         contact information>>
  * 
- * <<add more references here>>
- *  
- * Version/date: 
+ *         References:
+ *         Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented
+ *         Problem Solving.
+ *         Retrieved from
+ *         https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * Responsibilities of class:
+ *         <<add more references here>>
+ * 
+ *         Version/date:
+ * 
+ *         Responsibilities of class: to respond when a FishingButton is clicked
  * 
  */
 
-public class FishingButtonListener
+// TODO: FishingButtonListener is-an ActionListener
+public class FishingButtonListener 
 {
-
-	/**
-	 * TODO
-	 * @param goneFishingModel
-	 * @param goneFishingView
-	 * @param fishingButton
-	 */
-	public FishingButtonListener(GoneFishingModel goneFishingModel, GoneFishingView goneFishingView,
-			FishingButton fishingButton)
+	public FishingButtonListener(GoneFishingController controller,
+			FishingButton button)
 	{
 		// TODO
+
+		// TODO: register this listener with the button
+		
 	}
+
+	// TODO: Override actionPerformed here to call the appropriate method on the controller.
 
 }

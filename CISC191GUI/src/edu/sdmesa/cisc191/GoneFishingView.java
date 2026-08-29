@@ -6,55 +6,81 @@ import javax.swing.JFrame;
 
 /**
  * Lead Author(s):
- * @author 
- * @author 
- * <<add additional lead authors here, with a full first and last name>>
  * 
- * Other contributors:
- * <<add additional contributors (mentors, tutors, friends) here, with contact information>>
+ * @author
+ * @author
+ *         <<add additional lead authors here, with a full first and last name>>
  * 
- * References:
- * Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented Problem Solving.
- * Retrieved from https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
+ *         Other contributors:
+ *         <<add additional contributors (mentors, tutors, friends) here, with
+ *         contact information>>
  * 
- * <<add more references here>>
- *  
- * Version/date: 
+ *         References:
+ *         Morelli, R., & Walde, R. (2016). Java, Java, Java: Object-Oriented
+ *         Problem Solving.
+ *         Retrieved from
+ *         https://open.umn.edu/opentextbooks/textbooks/java-java-java-object-oriented-problem-solving
  * 
- * Responsibilities of class:
+ *         <<add more references here>>
+ * 
+ *         Version/date:
+ * 
+ *         Responsibilities of class:
  * 
  */
 
 public class GoneFishingView extends JFrame
-{
-
+{	
 	/**
-	 * TODO
-	 * @param model
+	 * Create GUI for game
+	 * 
+	 * @param goneFishingModel used to update the GUI
 	 */
-	public GoneFishingView(GoneFishingModel model)
+	public GoneFishingView()
 	{
-		// TODO
+		// TODO: create and layout all the needed widgets with their listeners
 
+		// In the end do:
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		pack();
 		setVisible(true);
 	}
 
 	/**
-	 * Starts the game
-	 * @param args not used
+	 * Update the GUI based on the number of fish remaining
+	 * @param fishRemaining
 	 */
-	public static void main(String[] args)
+	public void updateFishRemaining(int fishRemaining)
 	{
-		new GoneFishingView(new GoneFishingModel());
+		// TODO
+		
 	}
 
 	/**
-	 * TODO
+	 * Update the GUI based on the the number of tries remaining
+	 * @param triesRemaining
 	 */
-	public void updateUI()
+	public void updateTriesRemaining(int triesRemaining)
 	{
 		// TODO
+		
+	}
+	
+	/**
+	 * Set the maximum number of fish for the slider
+	 * @param maxFish
+	 */
+	public void setMaxFish(int maxFish) {
+		// TODO
+		
+	}
+	
+	/**
+	 * Set the maximum number of tries for the slider
+	 * @param maxTries
+	 */
+	public void setMaxTries(int maxTries) {
+		// TODO
+		
 	}
 }
