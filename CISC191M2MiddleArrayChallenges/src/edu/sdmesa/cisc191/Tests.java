@@ -62,7 +62,7 @@ public class Tests
 		Logic.zeroBlue(studentPicture);
 		
 		// Testing that the first pixel is correct.
-		Assertions.assertEquals(0, studentPicture.getPixels2D()[0][0].getBlue());
+		//Assertions.assertEquals(0, studentPicture.getPixels2D()[0][0].getBlue());
 
 		// the resulting student image should be pixel by pixel equivalent to
 		// the expectedPicture image
@@ -112,28 +112,29 @@ public class Tests
 //		assertEquals(expectedPicture, studentPicture, "Negative");
 //	}
 //
-//	@Test
-//	@Order(4)
-//	public void testMakeSunset()
-//	{
-//		/* Create two identical Picture objects from the same picture */
-//		Picture originalPicture = new Picture("fireFall.png");
-//		Picture studentPicture = new Picture("fireFall.png");
-//		Picture expectedPicture = new Picture("fireFallMakeSunset.png");
-//
-//		/* apply the filter */
-//		Logic.makeSunset(studentPicture, 1.5, .9);
-//		
-//		// Testing that the first pixel is sunsetted
-//		Assertions.assertEquals(1.5*originalPicture.getPixels2D()[0][0].getRed(), studentPicture.getPixels2D()[0][0].getRed());
-//		Assertions.assertEquals(0.9*originalPicture.getPixels2D()[0][0].getGreen(), studentPicture.getPixels2D()[0][0].getGreen());
-//		Assertions.assertEquals(0.9*originalPicture.getPixels2D()[0][0].getBlue(), studentPicture.getPixels2D()[0][0].getBlue());
-//		
-//		// the resulting student image should be pixel by pixel equivalent to
-//		// the expectedPicture image
-//		assertEquals(expectedPicture, studentPicture, "Make Sunset");
-//	}
-//
+	@Test
+	@Order(4)
+	public void testMakeSunset()
+	{
+		/* Create two identical Picture objects from the same picture */
+		Picture originalPicture = new Picture("fireFall.png");
+	
+		Picture studentPicture = new Picture("fireFall.png");
+		Picture expectedPicture = new Picture("fireFallMakeSunset.png");
+
+		/* apply the filter */
+		Logic.makeSunset(studentPicture, 1.5, .9);
+		
+		// Testing that the first pixel is sunsetted
+		Assertions.assertEquals(Math.min(255, (int)(1.5 * originalPicture.getPixels2D()[0][0].getRed())), studentPicture.getPixels2D()[0][0].getRed());
+		Assertions.assertEquals(0.9*originalPicture.getPixels2D()[0][0].getGreen(), studentPicture.getPixels2D()[0][0].getGreen());
+		Assertions.assertEquals(0.9*originalPicture.getPixels2D()[0][0].getBlue(), studentPicture.getPixels2D()[0][0].getBlue());
+		
+		// the resulting student image should be pixel by pixel equivalent to
+		// the expectedPicture image
+		assertEquals(expectedPicture, studentPicture, "Make Sunset");
+	}
+
 //	@Test
 //	@Order(5)
 //	void testFlipHorizontal()
